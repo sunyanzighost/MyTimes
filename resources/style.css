@@ -1,6 +1,9 @@
 header {
   display: flex;
   justify-content:space-between;
+  width:100%;
+  border-bottom: 1px solid black;
+  height:100px;
 
 }
 
@@ -12,18 +15,100 @@ header span{
 
 .logo span {
   color: MediumAquamarine;
+  margin-left:10px;
 }
 
 .logo {
   display:inline-flex;
   align-items: center;
+  margin-left:30px;
 }
 
 nav {
   display:flex;
   align-items: center;
+  margin-right:30px;
+  flex-wrap: wrap;
+  align-content:space-around;
 }
 
 nav span {
   margin:0 10px;
+}
+
+nav span a{color: black;}
+
+.large{
+  width: 630px;
+  display:flex;
+  flex-wrap: wrap;
+}
+
+.medium {
+  width:300px;
+}
+
+.small{
+  width:240px;
+}
+
+.container {
+  display:flex;
+}
+
+.first-story,
+.second-story,
+.third-story{
+  display:flex;
+}
+
+.first-story{
+  background-image: url('./img-story-main.png');
+  height:300px;
+  justify-content:flex-start;
+}
+
+.title{
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+  margin:0;
+}
+
+#headline{
+  font-size:40px;
+}
+
+.second-story{
+  background-image: url('./img-story-2.png');
+  height:300px;
+  justify-content: center;
+}
+
+.third-story{
+  background-image: url('./img-story-3.png');
+  height:300px;
+  justify-content:center;
+}
+
+.second-story h2,
+.third-story h2{
+  text-align:center;
+}
+
+p{
+font-family: Georgia;
+font-size: 17px;
+color: black;
+}
+
+.story-content{
+  width:300px;
+}
+
+.large-column-bottom{
+  display:flex;
+  width:100%;
+  justify-content:space-between;
 }
